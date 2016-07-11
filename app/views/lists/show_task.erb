@@ -1,0 +1,9 @@
+
+<p><%= @list.due_date %>:  <%= @list.task %></p>
+<br>
+<form action="/lists/<%= @list.id %>/delete" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Task">
+</form>
+<br>
+<a href="/lists/<%= @list.id %>/edit">Edit Task</a>

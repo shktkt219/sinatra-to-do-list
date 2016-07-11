@@ -1,0 +1,8 @@
+
+<h2>Your Task</h2>
+
+<% @lists.each do |list| %>
+  <div>
+    <%= list.due_date %> <%= list.task %>
+  </div>
+<% end %>
